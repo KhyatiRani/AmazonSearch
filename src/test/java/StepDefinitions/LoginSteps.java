@@ -13,7 +13,7 @@ import io.cucumber.java.en.When;
 public class LoginSteps {
 
 	LoginPage login = new LoginPage(DriverFactory.getDriver());
-	//LoginPage login;
+	// LoginPage login;
 
 	@Given("user is on login page")
 	public void user_is_on_login_page() {
@@ -34,7 +34,7 @@ public class LoginSteps {
 
 	@Then("verify if user navigates to the HomePage")
 	public void verify_if_user_navigates_to_the_HomePage() {
-		Assert.assertEquals(login.navigatesToHomePage().isDisplayed(),"true");
+		Assert.assertEquals(login.navigatesToHomePage().isDisplayed(), "true");
 		Assert.assertTrue(login.navigatesToHomePage().isDisplayed());
 	}
 
@@ -45,7 +45,7 @@ public class LoginSteps {
 
 	@Then("verify if user is able to get the items with search keyword (.*)$")
 	public void verify_if_user_is_able_to_get_the_items_with_search_keyword(String mobile) {
-		//Assert.assertTrue(login.getItemList().contains(mobile));
-	
+		// Assert.assertTrue(login.getItemList().contains(mobile));
+
 	}
 }

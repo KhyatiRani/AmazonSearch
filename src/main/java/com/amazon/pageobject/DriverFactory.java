@@ -5,12 +5,10 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
 public class DriverFactory {
 	public Properties pro;
 	static WebDriver driver;
-	//ConfigReader reader = new ConfigReader();
+	// ConfigReader reader = new ConfigReader();
 
 	public static WebDriver getDriver() { // Setting system properties of ChromeDriver
 		System.setProperty("webdriver.chrome.driver",
